@@ -1,0 +1,7 @@
+schema: ./schema/schema.json
+extensions:
+  graphql-codegen:
+    generates:
+      ./types/default.ts:
+        plugins:
+          - typescript

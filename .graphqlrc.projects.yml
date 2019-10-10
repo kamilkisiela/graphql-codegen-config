@@ -1,0 +1,49 @@
+projects:
+  json:
+    schema: ./schema/schema.json
+    extensions:
+      graphql-codegen:
+        generates:
+          ./types/json.ts:
+            plugins:
+              - typescript
+  graphql:
+    schema: ./schema/schema.graphql
+    extensions:
+      graphql-codegen:
+        generates:
+          ./types/graphql.ts:
+            plugins:
+              - typescript
+  js-ast:
+    schema: ./schema/schema-ast.js
+    extensions:
+      graphql-codegen:
+        generates:
+          ./types/js-ast.ts:
+            plugins:
+              - typescript
+  js-json:
+    schema: ./schema/schema-json.js
+    extensions:
+      graphql-codegen:
+        generates:
+          ./types/js-json.ts:
+            plugins:
+              - typescript
+  js-object:
+    schema: ./schema/schema-object.js
+    extensions:
+      graphql-codegen:
+        generates:
+          ./types/js-object.ts:
+            plugins:
+              - typescript
+  js-text:
+    schema: ./schema/schema-text.js
+    extensions:
+      graphql-codegen:
+        generates:
+          ./types/js-test.ts:
+            plugins:
+              - typescript

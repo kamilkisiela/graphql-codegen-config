@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "graphql-codegen-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn npm-run-all -p graphql:**",
+    "graphql": "graphql-codegen --config .graphqlrc.projects.yml",
+    "graphql:default": "graphql-codegen",
+    "graphql:json": "yarn graphql --project json",
+    "graphql:graphql": "yarn graphql --project graphql",
+    "graphql:js:ast": "yarn graphql --project js-ast",
+    "graphql:js:json": "yarn graphql --project js-json",
+    "graphql:js:object": "yarn graphql --project js-object",
+    "graphql:js:text": "yarn graphql --project js-text"
+  },
+  "dependencies": {
+    "@graphql-codegen/cli": "1.8.1-alpha-a7a03b6d.10+a7a03b6d",
+    "@graphql-codegen/typescript": "1.8.1-alpha-a7a03b6d.10+a7a03b6d",
+    "graphql": "14.5.8",
+    "npm-run-all": "4.1.5"
+  }
+}
